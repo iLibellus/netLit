@@ -1,0 +1,21 @@
+<div class="container" ng-controller="BookCtrl as book">
+    <div class="jumbotron">
+        <h1 align="center">NetLit Application</h1>
+        <br>
+        <div id="book-form" class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                
+            </div>
+        </div>
+    </div>
+    <div id="book-list" class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="checkbox" ng-repeat="singleBook in books">
+                <label>
+                    <input type="checkbox" ng-click="book.removeBook(singleBook)">
+                    {{ singleBook.value }}
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
