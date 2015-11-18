@@ -12,7 +12,7 @@ module.exports = {
         });
     },
     addBook: function(req, res) {
-        var bookal = (req.body.value) ? req.body.value : undefined
+        var bookVal = (req.body.value) ? req.body.value : undefined
         BookService.addBook(bookVal, function(success) {
             res.json(success);
         });
